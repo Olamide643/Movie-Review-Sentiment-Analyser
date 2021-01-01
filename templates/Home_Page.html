@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/> 
+   <title>Starter Template - Materialize</title> 
+  
+ </head> 
+  
+ <body> 
+<center>
+       <h1 class="header center orange-text">Sentiment Analysis</h1> 
+       <div class="row center"> 
+
+       </div> 
+      <div class="row"> 
+     <form action='/predict' method="post" class ="validate"> 
+       <div class="row"> 
+         <div class="input-field col s4"> 
+             <label for="first_name"><b>Enter your view on Avenger: </b></label>  
+           <input placeholder="Review here" name="text"> 
+         </div> 
+       </div> 
+        <br>
+  
+       <div class="row center"> 
+           <button type="submit" class="btn-large waves-effect waves-light orange" style="background-color:orange">Predict Probability</button> 
+       </div> 
+     </form> 
+       </div> 
+  
+       <br> 
+        <h1> PERCENTAGE: {{res}} % </h1>
+        <h1> PREDICTION: {{answer}} </h1>
+        <a href = '/'> Go Back To Home Page<a>
+  
+     </div> 
+   </div> 
+  
+  </center>
+  
+   </body> 
+ </html> 
